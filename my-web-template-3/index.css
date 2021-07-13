@@ -1,0 +1,404 @@
+body{
+    margin:0;
+    padding:0;
+    font-family:sans-serif;
+}
+
+.header{
+    background-image:linear-gradient(rgba(6,37,0,0.5),rgba(0,99,8,0.6)),url('images/pexels-daria-shevtsova-1078058.jpg');
+    background-position:center;
+    background-size:cover;
+    height:90vh;
+}
+
+.header-para,.service-section-headings,.service-section-paras{
+    font-family:'Roboto';
+}
+
+.header-ul,.header-heading-para-row,.service-section-icon-row,.service-section-headings-row,.service-section-paras-row,.products-images-row,.product-para-icon-row,.about-us-cards-row,.testimonial-icons-images-row,.testimonial-icons-row,.all-testimonial-row,.social-media-icons-row,.sign-up-log-in-buttons-row,.testimonial-column,.para-button-column{
+    display:flex;
+}
+
+.header-ul,.header-heading-para-row,.service-section-icon-row,.service-section-headings-row,.service-section-paras-row,.products-images-row,.product-para-icon-row,.about-us-cards-row,.testimonial-icons-images-row,.testimonial-icons-row,.social-media-icons-row,.sign-up-log-in-buttons-row{
+    flex-direction:row;
+}
+
+.testimonial-column,.para-button-column{
+    flex-direction: column;
+}
+
+.header-ul{
+    padding-top:30px;
+    justify-content: space-around;
+}
+
+.header-li{
+    padding-top:5px;
+    list-style:none;
+}
+
+.header-li:hover{
+    transform: scale(1.1);
+    transition: .4s;
+}
+
+.header-links{
+    text-decoration:none;
+    color:white;
+    font-size:23px; 
+    padding: 10px;
+    box-shadow:12px 22px 82px 22px black;
+}
+
+.header-links:hover{
+    transition: .4s;
+    border-bottom:7px solid lightgreen;
+
+}
+
+.header-heading{
+    color:white;
+    opacity: 85%;
+    line-height: 72px;
+    position: relative;
+    left:170px;
+    top:20px;
+}
+
+.header-heading-2{
+    position: relative;
+    left:70px;
+    top:260px;
+    color:white;
+    padding:16px;
+    box-shadow:12px 22px 82px 22px black;
+    border-radius:10px;
+}
+
+.header-para{
+    color:white;
+    padding-top:30px;
+    padding-right:10px;
+    margin-left:500px;
+    font-size:18px;
+}
+
+li {
+    display: block;
+    transition-duration: 0.5s;
+}
+
+ul li ul {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    transition: all 0.5s ease;
+    margin-top: 1rem;
+    left: 0;
+    display: none;
+}
+
+ul li:hover > ul,
+ul li ul:hover {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
+
+
+.service-section-icon-row{
+    margin-top:20px;
+    justify-content: space-around;
+}
+
+.service-section-icons{
+    color:green;
+    font-size:50px;
+}
+
+.service-section-headings-row{
+    justify-content: space-around;
+    font-size:20px;
+}
+
+.service-section-paras-row{
+    justify-content: space-around;
+
+}
+
+.service-section{
+    padding-top:12px;
+    background: whitesmoke;
+    border-bottom:52px solid green;
+    opacity: 85%;
+}
+
+
+.service-section-headings{
+    font-size:28px;
+    color: green;
+    padding: 8px;
+    box-shadow: 12px 12px 82px 22px lightgray;
+    opacity: 72%;
+}
+
+.service-section-paras{
+    padding-left: 70px;
+    line-height: 25px;
+    font-family: 'Lato', sans-serif;
+    font-size:20px;
+    color:green;
+    box-shadow:12px 22px 82px 12px whitesmoke;
+
+}
+
+.service-section-heading{
+    color:darkgreen;
+}
+
+.service-section-heading,.product-section-heading,.about-us-heading,.name{
+    text-align: center;
+}
+
+.service-section-line,.product-section-line,.about-us-line,.testimonial-section-line{
+    margin-left: 330px;
+    width:55%;
+    height:3px;
+
+}
+
+.service-section-line{
+    opacity: 85%;
+    background:green;
+}
+
+.products-section{
+    background-image: url('images/pexels-skinny-alien-2318554.jpg');
+    background-size:cover;
+    background-position: center;
+    height:70vh;
+    opacity: 95%;
+}
+
+.product-section-heading{
+    padding-top:12px;
+    color:white;
+}
+
+.product-section-line{
+    background:white;
+}
+
+.products-images{
+    padding-left: 60px;
+    width:230px;
+    height:auto;
+    box-shadow:32px 12px 32px 12px black;
+}
+
+.products-images:hover{
+    transition:.3s; 
+    cursor: pointer;
+    transform:scale(1);
+    box-shadow:none;
+    border-radius:10px;
+}
+
+.product-para{
+    color:white;
+    padding-left:55px;
+}
+
+
+.see-more-product-link{
+    font-size:20px;
+    color:lime;
+    text-decoration: none;
+}
+
+.see-more-product-icon{
+    position:relative;
+    top:13px;
+    left:5px;
+    font-size:25px;
+    color:green;
+
+}
+
+
+
+
+.see-more-product-link:hover{
+    text-decoration: underline;
+    border:1px solid green;
+    padding:5px;
+    transition: .3s;
+}
+
+
+.about-us-cards-row{
+    justify-content: space-around;
+}
+
+.about-us-cards{
+    padding: 24px;
+    margin-left:20px;
+    width:280px;
+    height:370px;
+    border:1px solid white;
+    box-shadow:12px 12px 12px 12px lightgray;
+    background-image: url(images/pexels-inxs-watta-5043809.jpg);
+    background-position: center;
+    background-size:cover;
+    opacity: 85%;
+}
+
+.about-us-line{
+    background:black;
+}
+
+.about-us-images{
+    padding-top: 10px;
+    padding-left: 15px;
+    width:250px;
+    height:auto;
+    border:px solid green;
+
+
+}
+
+.name{
+    margin-left: 20px;
+    width:215px;
+    padding:10px;
+    border:3px solid green;
+    font-family:Lato;
+}
+
+.about-us-cards:hover{
+    transform: scale(1.1);
+    transform: translate(10px);
+    transition: .3s;
+    background:linear-gradient(rgba(6,37,0,0.4),rgba(0,99,8,0.6));
+}
+
+.about-us-para{
+   font-family:Lato;
+    padding-left: 20px;
+}
+
+.testimonial-section{
+    background-image:url(images/pexels-scott-webb-1048033.jpg);
+    background-position: center;
+    background-size:cover;
+    background-attachment: fixed;
+    height:55vh;
+    opacity:95%; 
+}
+
+.testimonial-heading{
+    text-align: center;
+    color:white;
+
+}
+
+.testimonial-section-line{
+    background: white;
+}
+
+.testimonial-images-row{
+    justify-content: space-around;
+}
+
+.testimonial-images{
+    margin-left:120px;
+    width:55px;
+    height:auto;
+    border:1px solid transparent;
+    border-radius:200px;
+}
+
+.testimonial-para,.testimonial-name{
+    font-family:'Lato';
+
+}
+
+.testimonial-para{
+    font-size:22px;
+}
+
+.testimonial-name{
+    font-size:18px;
+    margin-top:-35px;
+}
+
+.testimonial-column{
+    color:white;
+    line-height:32px;
+    padding-left: 70px;
+}
+
+.testimonial-icons{
+    font-size:20px;
+    border:1px solid #186946;
+    background: #186946;
+}
+
+.footer-section{
+    height:100px;
+}
+
+.social-media-icons-row{
+    padding-top: 30px;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.social-media-icons{
+    color:green;
+    font-size:35px;
+    opacity: 75%;
+}
+
+.social-media-icons:hover{
+    opacity: 1;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.social-media-icons:nth-child(1){
+    color: #4e8af3;
+}
+
+.social-media-icons:nth-child(2){
+    color:skyblue;
+}
+
+.social-media-icons:nth-child(3){
+    color:magenta;
+}
+
+.social-media-icons:nth-child(4){
+    color: red;
+}
+
+
+.sign-up-log-in-buttons-row{
+    gap:20px;
+    padding-left: 700px;
+}
+
+.sign-up-log-in-buttons{
+    text-decoration: none;
+    color:white;
+    border:2px solid white;
+    padding: 13px 40px 10px 40px;
+    position: relative;
+    top:70px;
+    
+}
+
+.sign-up-log-in-buttons:hover{
+    background: green;
+    transition:.3s;
+}

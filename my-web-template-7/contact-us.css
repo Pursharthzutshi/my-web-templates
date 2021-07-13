@@ -1,0 +1,92 @@
+body{
+    padding:0;
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    text-align: center;
+}
+
+.contact-us-icons,.contact-us-text,.chatbox-heading,.chatbox-button{
+    color:white;
+}
+
+.contact-us-icons-text,.input-fields-column,.all-chatbox,.all-contact-us-icons,.all-contact-us-icons-text,.all-contact-us-icons-text-row{
+    display: flex;
+}
+
+.contact-us-icons-text,.all-contact-us-icons-text-row{
+    flex-direction: row;
+}
+
+.input-fields-column,.all-chatbox,.all-contact-us-icons,.all-contact-us-icons-text{
+    flex-direction: column;
+}
+
+.contact-us-section{
+    height:95vh;
+    background-image: linear-gradient(rgb(31 44 195 / 50%),rgb(198 23 192 / 60%)),url(images/pexels-andrea-piacquadio-920382.jpg);
+    background-size:cover;
+    background-position: center;
+    opacity: .8;
+}
+
+.input-fields-column{
+    gap:40px;
+}
+
+.contact-us-text{
+    font-size:18px;
+}
+
+.contact-us-icons{
+    margin-top:20px;
+    font-size:52px;
+}
+
+.chatbox{
+    background: none;
+    outline:none;
+    box-shadow:0px 8px 38px 0px  ;
+    border:2px solid transparent;
+    width:300px;
+    height:200px;
+    margin-left:5px;
+}
+
+.chatbox:focus{
+    transition: .4s;
+    background: white;
+}
+
+.chatbox::placeholder{
+    color:black;
+    font-size:13px;
+    font-family: 'Roboto';
+    position: relative;
+    top:170px;
+    padding-left: 190px;
+}
+
+.all-chatbox{
+    align-items: center;
+}
+
+.chatbox-button{
+    padding:11px;
+    border-radius:200px;
+    text-decoration: none;
+    border:3px solid white;
+}
+
+.chatbox-button:hover{
+    transition:.4s;
+    background:white;
+    color:black;
+}
+
+.all-contact-us-icons-text-row{
+    padding-top:35px;
+    justify-content: space-around;
+}

@@ -1,0 +1,161 @@
+body{
+    padding:0px;
+    margin:0px;
+    font-family:'sans-serif';
+}
+
+.sign-up-header{
+    background-image:linear-gradient(rgba(6,37,0,0.5),rgba(0,99,8,0.6)),url('images/pexels-daria-shevtsova-1078058.jpg');
+    background-size:cover;
+    background-position: cover;
+    height:100vh;
+}
+
+.heading-line-column,.terms-policy-para-checkbox-column,.input-field-text-row,.input-field-column,.input-text-row,.buttons-row,.front-page-content-row{
+    display:flex;
+}
+
+.input-field-text-row,.buttons-row,.front-page-content-row{
+    flex-direction: row;
+}
+
+.heading-line-column,.input-field-column,.input-text-row,.terms-policy-para-checkbox-column{
+    flex-direction:column;
+}
+
+.sign-up-heading{
+    background: ;
+    opacity:95%;
+    color:white;
+    font-family: sans-serif;
+    padding-top:40px;
+    text-align: center;
+}
+
+.line{
+    opacity:;
+    width:200px;
+    height:7px;
+    background:white;
+    border:px solid green;
+    border-radius:200px;
+    box-shadow: 5px 12px 31px 1px lightgray;
+}
+
+.heading-line-column{
+    align-items:center;
+}
+
+.input-fields{
+    width:330px;
+    height:20px;
+    border:6px solid rgba(6,37,0,0.9);
+    border-radius:200px;
+    outline: none;
+    padding: 16px;
+}
+
+.input-fields:hover{
+    transition: .3s;
+    background: ;
+    color:;
+background: lightgray;
+}
+
+.input-fields:focus{
+    transition:.3s;
+    border:2px solid green;
+    box-shadow:1px 8px 1px 1px green;
+}
+
+.input-heading-field-row{
+    gap:20px;
+    border-top:1px solid transparent;    
+}
+
+.input-heading{
+    position: relative;
+    top:-20px;
+    font-size:20px;
+    color: white;
+}
+
+.input-heading-field-column{
+    align-items: center;    
+}
+
+.input-text{
+    color:white;
+    font-size:20px;
+    font-family:'Lato';
+    margin-left:50px;
+    padding: 5px;
+    box-shadow:12px 2px 102px 12px rgba(0,0,0.1);
+}
+
+.input-field-column{
+    justify-content: space-around;
+    padding-left: 62px;
+}
+
+.input-fields::placeholder{
+    color:green;
+    font-family: Lato;
+    padding-left:5px;
+    background: ;
+}
+
+.buttons-row{
+    margin-top:30px;
+    margin-left:1000px;
+    margin-top:-40px;
+    gap:0px;
+}
+
+.buttons{
+    opacity: 85%;
+    background: green;
+    text-decoration: none;
+    color:white;
+    font-family: lato;
+    padding: 10px;
+    margin-left:20px;
+    border:3px solid white;
+}
+
+.buttons:hover{
+    color:;
+    transition: .3s;
+    background: transparent;
+}
+
+.buttons:active{
+    background: transparent;
+    opacity: 45%;
+}
+
+.front-page-content-row{
+    justify-content: space-around;
+}
+
+.terms-policy-box{
+    overflow-y: scroll;
+    border:1px solid black;
+    padding:10px;
+    height:400px;
+    width:600px;
+    padding-left:20px;
+    margin-left:;
+}
+
+.terms-policy-para{
+    color:white; 
+    font-family: lato;
+    line-height:24px;
+}
+
+.terms-policy{
+    color:white;
+    font-family: 'Roboto';
+    font-size:20px;
+}

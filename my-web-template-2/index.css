@@ -1,0 +1,228 @@
+body{
+    margin:0;
+    padding:0px;
+    font-family:sans-serif;
+}
+
+.header{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.8)),url('images/pexels-daria-obymaha-1684149.jpg');
+    background-size:cover;
+    background-position: cover;
+    height:108vh;
+}
+
+.trust-us-heading,.color-section-para{
+    text-align: center;
+}
+
+.header-para,.first-section-heading,.trust-us-heading{
+    font-family:'Roboto';   
+}
+
+.header-heading{
+    padding-left:115px;
+    color:white;
+    border:1px solid white;
+    width:420px;
+    margin-left:15px;
+    font-size:40px;
+}
+
+.header-heading:hover{
+    transition:.3s;
+    box-shadow: 11px 61px 1px 1px;
+    background: white;
+    color:black;
+}
+
+.header-para{
+    box-shadow: 12px 12px 12px 12px rgba(0,0,0,0.4);
+    border-top:1px solid transparent;
+    border-bottom:px solid ;
+    color:white;
+    padding-left:12px;
+    line-height:32px;
+    font-size:20px;
+    width:90%;
+    margin-left: 60px;
+    opacity: 45%;
+}
+
+.header-para:hover{
+    box-shadow: none;
+    transform: scale(0.8);
+    transition: .3s;
+}
+
+.header-image{
+    padding-bottom: 20px;
+    padding-left: 60px;
+    opacity: 55%;
+    width:420px;
+    height:auto;
+}
+
+.header-icon{
+    opacity:;
+    background: ;
+    color:white;
+    font-size:320px;
+}
+
+.header-icon:hover{
+    box-shadow:;
+    transition:.4s;
+    transform:;
+}
+
+.header-para-2{
+    font-size:43px;
+    color:white;
+    background: black;
+    padding: px;
+    border-top:5px solid white;
+    border-bottom:5px solid white;
+    box-shadow:11px 11px 1px 1px white;
+}
+
+.section-column,.header-ul,.header-buttons-row{
+    display:flex;
+}
+
+.header-ul,.header-buttons-row{
+    flex-direction: row;
+}
+
+.section-column{
+    flex-direction: column;
+}
+
+.first-section,.second-section,.third-section,.fourth-section,.fifth-section{
+    width:100%;
+    height:34vh;
+    padding-bottom: 40px;
+    opacity: 88%;
+}
+
+.first-section:hover,.second-section:hover,.third-section:hover,.fourth-section:hover,.fifth-section:hover{
+    transform: scale(0.9);
+    cursor: pointer;
+    background: black;
+    transition: .3s;
+    border:5px solid;
+    box-shadow: 12px 1px 1px black;
+}
+
+.first-section{
+    background:red;
+}
+
+.second-section{
+    background:green;
+}
+
+.third-section{
+    background:orange;
+}
+
+.fourth-section{
+    background:blue;
+}
+
+.fifth-section{
+    background:violet;
+}
+
+.section-column{
+    align-items: center;
+}
+
+.color-section-icon{
+    font-size:80px;
+    color:white;
+}
+
+.color-section-para{
+    font-size:17px;
+    line-height: 32px;
+    color:white;
+    padding-right:22px;
+}
+
+.header-ul{
+
+    list-style:none;
+    gap:40px;
+}
+
+.header-li{
+    padding-top:32px;
+}
+
+.header-links{
+    text-decoration:none;
+    color:white;
+    font-size:20px;
+    padding-top:10px;
+    border:4px solid black;
+    box-shadow:15px 1px 1px 1px black;
+    padding:10px;
+}
+
+.header-links:hover{
+    background: black;
+    color:white;
+    box-shadow: 1px 1px 1px 1px white;
+    transition:.3s;
+}
+
+.header-buttons-row{
+    justify-content: space-around;
+}
+
+.header-buttons{
+    text-decoration: none;
+    color:white;
+    padding-left:10px;
+    font-size:20px;
+    padding:12px;
+    border:1px solid white;
+    border-radius:200px;
+
+}
+
+.header-buttons:hover{
+    background: black;
+}
+
+.first-section-heading{
+    font-size:23px;
+    color:white;
+}
+
+.trust-us-heading{
+    font-size:30px;
+}
+
+.trust-us-section{
+    background: black;
+    opacity: 90%;
+}
+
+.line{
+
+    width:100%;
+    height:5px;
+    background:white;
+    opacity: 92%;
+    border:1px solid whitesmoke;
+    box-shadow:5px 1px 12x 1px whitesmoke;
+}
+
+.trust-us-heading,.trust-us-para{
+
+    color:white;
+    padding-bottom:7px;
+    padding-top:10px;
+    
+}

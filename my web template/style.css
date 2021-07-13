@@ -1,0 +1,314 @@
+body{
+    font-family:sans-serif;
+    margin:0;
+    padding:0;
+}
+
+.header{
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.7)),url('images/rendering-abstract-futuristic-background-with-glowing-neon-blue-orange-lights.jpg');
+    background-position: center;
+    background-size:cover;
+    height:100vh;
+}
+
+.header-heading,.nav-bar-links,.header-buttons,.header-para,.name,.reviews,.contact-us-heading{
+    color:white;
+}
+
+.header-heading,.nav-bar-links,.header-para,.products-headings{
+    font-family:'Roboto'; 
+}
+
+.nav-bar-ul,.header-buttons-row,.header-para-image-row,.products-icons-row,.products-headings-row,.contact-fill-form-heading-row,.products-para-row,.reviews-circle-box-row,.about-us-row,.circle-box-column,.product-image-column,.about-us-column,.contact-us-row,.products-image-row,form,.front-page-section{
+    display:flex;
+}
+
+.nav-bar-ul,.header-buttons-row,.header-para-image-row,.products-icons-row,.products-headings-row,.products-para-row,.reviews-circle-box-row,.contact-us-row,.contact-fill-form-heading-row{
+    flex-direction: row;
+}
+
+.circle-box-column,form,.front-page-section,.product-image-column,.about-us-column{
+    flex-direction: column;
+}
+
+.nav-bar-links,.header-buttons{
+    text-decoration:none;
+}
+
+
+.products-icons-row,.products-headings-row,.products-para-row,.products-heading,.products-heading,.testimonial-heading{
+    justify-content: center; 
+    color:white;
+}
+
+.products-heading,.testimonial-heading,.contact-us-heading,.fill-form-heading{
+    font-family: 'Poppins';
+    font-size:33px;
+}
+
+.products-heading,.testimonial-heading{
+    text-align: center;
+}
+
+.nav-bar-li{
+    list-style:none;
+    margin-left:20px;
+    padding-top:35px;
+}
+
+.nav-bar-links{
+    font-size:18px;
+}
+
+.nav-bar-links:hover{
+    border-bottom:4px solid white;
+    transition:.2s;
+}
+
+.header-heading{
+    font-size:80px;
+    margin-top:215px;
+    padding-left: 60px;
+    white-space: nowrap;
+}
+
+.header-buttons-row{
+    margin-left:60px;
+    margin-top:-40px;
+}
+
+.header-buttons{
+    margin-left:15px;
+    font-size:20px;
+    background: black;
+    padding:5px 40px 5px 40px;
+    border:1px solid gray;
+    border-radius:200px;
+}
+
+.header-buttons:hover{
+    transition: .2s;
+    background:#181818;
+    color:;
+}
+
+.header-image{
+    width:280px;
+    height:200px;
+    border-radius:200px;
+}
+
+.header-para{
+    word-spacing: ;
+    color:#f2f2f2;
+    font-size:22px;
+    line-height:45px;
+    padding-left:80px;
+    padding-top:220px;
+}
+
+.products-section{
+    height:55vh;
+    background:#212121;
+    color:black;
+    box-shadow: 1px 1px 1px white;
+    border:1px solid black;
+}
+
+.products-icons-row{
+    margin-top:40px;
+}
+
+.products-icons{
+    font-size:70px;
+    margin-left:220px;
+}
+
+.products-headings{
+    font-size:20px;
+    margin-left:150px;
+}
+
+.products-headings-row{
+    margin-left:-110px;
+}
+
+.products-icons-row{
+    margin-left:-170px;
+}
+
+.products-para-row{
+
+}
+
+.products-para{
+    margin-left:60px;
+}
+
+.products-heading{
+    padding-bottom: 8px;
+}
+
+.testimonial-section{
+    height:82vh;
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.7)),url('images/Feedback-to-Creatives.png');
+    background-position: center;
+    background-size:cover;
+    background-attachment: fixed;
+    margin-top:417px;
+}
+
+.reviews-circle-box-row{
+    justify-content: center;
+}
+
+.circle-box{
+    margin-left:32px;
+    padding:12px;
+    width:350px;
+    height:350px;
+    background:;
+    border-radius:;
+    border:3px solid white;
+}
+
+.circle-box-image{
+    border-radius:8px;
+    width:70px;
+    height:70px;
+}
+
+.circle-box-column{
+    margin-top:60px;
+    margin-left:30px;
+}
+
+.reviews{
+    line-height:25px;
+}
+
+.contact-us-section{
+    height:60vh;
+    background: whitesmoke;
+        
+}
+
+.contact-us-image{
+    opacity: ;
+    width:auto;
+    height:440px;
+    margin-top:-115px;
+}
+
+form{
+    justify-content: center;
+    margin-left:40px;
+}
+
+.contact-us-input-fields{
+    outline:none;
+    border:3px solid  black;
+    border-bottom:1px solid black;
+    box-shadow: 2px 1px 1px black;
+    opacity: 90%;
+    padding:16px;
+    width:650px;
+    height:20px;
+    background:;
+}
+
+.contact-us-input-fields::placeholder{
+    font-family: 'Roboto';
+    font-size:14px;
+}
+
+.contact-us-div,.fill-form-heading{
+    width:820px;
+    text-align: center;
+}
+
+.contact-us-heading{
+    white-space: nowrap;
+    position: relative;
+    left:83px;
+    color:;
+}
+
+.product-image-column{
+    margin-top:30px;
+}
+
+.products-image-row{
+    margin-top:12px;
+}
+
+.products-images{
+    width:300px;
+    height:auto;
+    margin-top:-8px;
+    margin-left:2px;
+}
+
+.products-images:hover{
+    transform: translatez(350px);
+}
+
+.about-us-section{
+    height:80vh;
+    background:black;
+    border-radius:px;
+    border:1px solid transparent;
+    box-shadow:1px 3px 3px white;
+    padding: 10px;
+}
+
+.about-us-box{
+    background: ;
+    border:1px solid transparent;
+    box-shadow:16px 366px 146px white;
+}
+
+.about-us-heading{
+    font-family: 'Poppins';
+    color:white;
+    text-align: center;
+    font-size:40px;
+}
+
+.about-us-column{
+    margin-top:;
+    color:white
+}
+
+.about-us-image{
+    margin-left:28px;
+    padding-right: 17px;
+    width:320px;
+    height:auto;
+}
+
+.about-us-column{
+    margin-left: 17px;
+    opacity: 57%;
+    align-items: center;
+    box-shadow: ;
+    background:black;
+    border:4px solid white;
+}
+
+.about-us-column:hover{
+    background:red;
+    transition: .2s;
+    cursor: pointer;
+}
+
+.about-us-row{
+    margin-top:10px;
+    justify-content: center;
+}
+
+.about-us-para{
+    padding-left: 12px;
+    line-height:26px;
+    color:white;
+}
