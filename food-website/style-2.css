@@ -1,0 +1,236 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat';
+}
+
+ul,
+.top-bar-container,
+.header-text-image-container,
+.header-buttons-container,
+.log-in-box-container,
+.service-section .our-service-container,
+.service-icon-heading-column,
+.line,
+.img-container,
+.membership-cards .membership-section,
+.membership-container,
+.membership-icons-plan-row {
+    display: flex;
+}
+
+ul,
+.top-bar-container,
+.header-text-image-container,
+.header-buttons-container,
+.log-in-box-container,
+.our-service-container,
+.line,
+.img-container,
+.membership-container,
+.membership-icons-plan-row {
+    flex-direction: row;
+}
+
+.service-icon-heading-column,
+.service-section,
+.membership-section,
+.membership-cards {
+    flex-direction: column;
+}
+
+.header-text-image-container {
+    padding-top: 80px;
+    justify-content: space-evenly;
+}
+
+button {
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 1px 12px 8px 12px;
+    color: black;
+    font-family: 'Montserrat';
+    border: none;
+    background: none;
+}
+
+button:hover {
+    color: white;
+}
+
+header {
+    height: 25rem;
+    clip-path: polygon(0% 0%, 18% 100%, 100% 100%, 100% 0%);
+    background: rgb(137, 16, 0);
+    color: white;
+}
+
+.top-bar-container {
+    background-color: white;
+    width: 100%;
+    padding-top: 20px;
+}
+
+.header-logo-div {
+    padding-left: 40px;
+}
+
+.header-logo-div h3 {
+    color: rgb(69, 45, 2);
+    padding: 8px 12px 8px 12px;
+}
+
+.top-bar-container {
+    justify-content: space-between;
+}
+
+nav {
+    padding: 10px 70px 0px 0px;
+}
+
+ul {
+    gap: 30px;
+    justify-content: flex-end;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    padding: 8px 12px 8px 12px;
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    transition: .2s;
+    color: white;
+    padding: 8px 12px 8px 12px;
+    background: linear-gradient(to left, rgb(211, 42, 0), rgb(209, 77, 0));
+}
+
+img {
+    box-shadow: .2px .2px 12px .2px black;
+    width: 20rem;
+    height: auto;
+}
+
+h2 {
+    line-height: 42px;
+}
+
+.header-buttons-container {
+    margin-top: 60px;
+    justify-content: space-evenly;
+}
+
+.header-buttons-container button {
+    border-radius: 200px;
+    font-family: 'Montserrat';
+    background: none;
+    color: white;
+    box-shadow: none;
+    border: none;
+    padding: 5px 16px 5px 16px;
+    background: black;
+}
+
+.log-in-box-container {
+    align-items: center;
+    justify-content: center;
+}
+
+.log-in-box-div {
+    box-shadow: .2px .2px 12px .2px black;
+    position: relative;
+    z-index: 1;
+    width: 25rem;
+    height: 20rem;
+    background: white;
+}
+
+h1 {
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    text-align: center;
+}
+
+.service-section {
+    justify-content: center;
+    align-items: center;
+}
+
+.line {
+    width: 18rem;
+    height: .2rem;
+    background: rgb(255, 94, 0);
+    align-items: center;
+    justify-content: center;
+}
+
+.service-section p {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.our-service-container {
+    justify-content: space-evenly;
+    gap: 100px;
+    margin-top: 30px;
+}
+
+.service-icon-heading-column ion-icon {
+    font-size: 5rem;
+}
+
+.service-icon-heading-column h1 {
+    margin-left: -30px;
+    color: rgb(83, 1, 19);
+}
+
+.img-container img {
+    width: 23.71rem;
+    height: auto;
+}
+
+.icon-images {
+    box-shadow: none;
+    width: 10rem;
+    height: auto;
+}
+
+.membership-container {
+    justify-content: space-around;
+}
+
+.membership-cards {
+    box-shadow: .2px .2px 12px .2px lightgray;
+    width: 20rem;
+    height: 20rem;
+    padding: 2px 12px 12px 2px;
+    background: rgb(86, 9, 2);
+    color: white;
+}
+
+.membership-icons-plan-row {
+    margin-left: 20px;
+    gap: 20px;
+}
+
+.membership-icons-plan-row ion-icon {
+    font-size: 1.8rem;
+}
+
+.membership-icons-plan-row p {
+    margin: -.5px 0px 0px 0px;
+}
+
+.membership-cards a {
+    margin: 60px 0px 0px 65px;
+    font-size: .9rem;
+    background: white;
+    padding: 8px 12px 8px 12px;
+    color: black;
+    box-shadow: .2px .2px 12px .2px white;
+}
