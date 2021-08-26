@@ -15,7 +15,7 @@ ul,
 .service-icon-heading-column,
 .line,
 .img-container,
-.membership-cards .membership-section,
+.membership-section,
 .membership-container,
 .membership-icons-plan-row,
 .testimonials-container,
@@ -63,6 +63,24 @@ ul,
 form,
 footer {
     flex-direction: column;
+}
+
+body::-webkit-scrollbar {
+    background: linear-gradient(to left, rgb(184, 31, 11), rgb(220, 28, 3));
+}
+
+body::-webkit-scrollbar-thumb {
+    background: rgb(255, 132, 102);
+    border-radius: 2px;
+}
+
+body::-webkit-scrollbar-button {
+    display: hidden;
+}
+
+body {
+    overflow-x: hidden;
+    overflow-y: scrol;
 }
 
 .contact-us-form-container input:focus,
@@ -239,6 +257,11 @@ h1 {
     margin-top: 30px;
 }
 
+.service-icon-heading-column {
+    padding: 12px 32px 2px 42px;
+    box-shadow: .2px .2px 12px .2px lightgray;
+}
+
 .service-icon-heading-column ion-icon {
     font-size: 5rem;
 }
@@ -249,6 +272,7 @@ h1 {
 }
 
 .img-container img {
+    margin-top: 40px;
     width: 23.71rem;
     height: auto;
 }

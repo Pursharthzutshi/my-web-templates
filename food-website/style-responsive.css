@@ -1,0 +1,89 @@
+@media screen and (max-width:704px) {
+    .top-bar-container,
+    .header-text-div,
+    .header-buttons-container,
+    our-service-container,
+    .img-container,
+    .membership-section,
+    .membership-container {
+        display: flex;
+    }
+    .top-bar-container,
+    .header-text-div,
+    .header-buttons-container,
+    .our-service-container,
+    .img-container,
+    .membership-section,
+    .membership-container,
+    .testimonials-section,
+    .testimonials-container {
+        gap: 20px;
+        flex-direction: column;
+    }
+    h3 {
+        text-align: center;
+    }
+    .img-container img {
+        width: 18rem;
+        height: auto;
+    }
+    header {
+        height: 20rem;
+        clip-path: none;
+    }
+    .header-image-div {
+        visibility: hidden;
+    }
+    .header-text-div {
+        margin: -50px 0px 0px 370px;
+    }
+    .header-text-div h2 {
+        margin-top: -23px;
+        white-space: nowrap;
+    }
+    .header-buttons-container {
+        margin-top: 0px;
+        justify-content: space-evenly;
+        box-shadow: none;
+    }
+    .service-section p {
+        font-size: .95rem;
+    }
+    .membership-section {
+        height: 75rem;
+    }
+    .header-text-div,
+    .our-service-container,
+    .img-container,
+    .membership-container,
+    .testimonials-container {
+        align-items: center;
+    }
+    .service-icon-heading-column {
+        padding: 12px 32px 2px 42px;
+        box-shadow: .2px .2px 12px .2px lightgray;
+    }
+    .membership-container {
+        margin-top: -20px;
+    }
+    .membership-cards {
+        width: 20rem;
+        height: 20rem;
+    }
+    .membership-icons-plan-row p {
+        font-size: .9rem;
+    }
+    svg {
+        z-index: -1;
+        margin-top: -110px;
+    }
+    .testimonials-section {
+        height: 80rem;
+    }
+    .contact-us-div ion-icon {
+        font-size: 1.7rem;
+    }
+    .contact-us-div p {
+        font-size: .8rem;
+    }
+}
