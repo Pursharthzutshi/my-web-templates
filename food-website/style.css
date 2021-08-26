@@ -8,7 +8,9 @@ ul,
 .top-bar-container,
 .header-text-image-container,
 .header-buttons-container,
+.header-buttons-icons-container,
 .log-in-box-container,
+.log-in-box-div,
 .service-section .our-service-container,
 .service-icon-heading-column,
 .line,
@@ -24,7 +26,9 @@ ul,
 .contact-us-form-container,
 form,
 .contact-us-container,
-.contact-us-div {
+.contact-us-div,
+footer,
+.social-medial-icons-container {
     display: flex;
 }
 
@@ -32,6 +36,7 @@ ul,
 .top-bar-container,
 .header-text-image-container,
 .header-buttons-container,
+.header-buttons-icons-container,
 .log-in-box-container,
 .our-service-container,
 .line,
@@ -43,17 +48,20 @@ ul,
 .testimonial-name-div,
 .line-div,
 .contact-us-form-container,
-.contact-us-container {
+.contact-us-container,
+.social-medial-icons-container {
     flex-direction: row;
 }
 
+.log-in-box-div,
 .service-icon-heading-column,
 .service-section,
 .membership-section,
 .membership-cards,
 .testimonials-box,
 .contact-us-div,
-form {
+form,
+footer {
     flex-direction: column;
 }
 
@@ -66,6 +74,14 @@ textarea:focus {
 textarea {
     outline: none;
     border: none;
+}
+
+.membership-cards a,
+.submit-btn {
+    background: rgb(255, 58, 40);
+    padding: 8px 12px 8px 12px;
+    color: white;
+    box-shadow: .2px .2px 12px .2px rgb(241, 58, 58);
 }
 
 .header-text-image-container {
@@ -81,10 +97,6 @@ button {
     font-family: 'Montserrat';
     border: none;
     background: none;
-}
-
-button:hover {
-    color: white;
 }
 
 header {
@@ -132,6 +144,10 @@ a {
     text-decoration: none;
 }
 
+.log-in-btn:hover {
+    color: white;
+}
+
 a:hover {
     transition: .2s;
     color: white;
@@ -152,31 +168,41 @@ h2 {
 .header-buttons-container {
     margin-top: 60px;
     justify-content: space-evenly;
-}
-
-.header-buttons-container button {
-    border-radius: 200px;
-    font-family: 'Montserrat';
-    background: none;
-    color: white;
     box-shadow: none;
+}
+
+.header-buttons-icons-container button {
+    border-radius: 8px;
+    margin-left: -33px;
+    letter-spacing: 1px;
+    background: none;
     border: none;
-    padding: 5px 16px 5px 16px;
-    background: black;
+    padding: 10px 16px 10px 42px;
+    font-size: .9rem;
 }
 
-.log-in-box-container {
-    align-items: center;
-    justify-content: center;
+.header-buttons-icons-container ion-icon {
+    margin: 8px 0px 0px 25px;
+    font-size: 1.3rem;
 }
 
-.log-in-box-div {
-    box-shadow: .2px .2px 12px .2px black;
-    position: relative;
-    z-index: 1;
-    width: 25rem;
-    height: 20rem;
+.header-buttons-icons-container:nth-child(1) ion-icon {
+    color: black;
+}
+
+.header-buttons-icons-container:nth-child(2) ion-icon {
+    color: white;
+}
+
+.header-buttons-icons-container:nth-child(1) button {
     background: white;
+    box-shadow: .2px .2px 12px .2px gray;
+}
+
+.header-buttons-icons-container:nth-child(2) button {
+    background: black;
+    color: white;
+    box-shadow: .2px .2px 5px .2px black;
 }
 
 h1 {
@@ -265,10 +291,6 @@ h1 {
 .membership-cards a {
     margin: 60px 0px 0px 65px;
     font-size: .9rem;
-    background: rgb(255, 58, 40);
-    padding: 8px 12px 8px 12px;
-    color: white;
-    box-shadow: .2px .2px 12px .2px rgb(241, 58, 58);
 }
 
 svg {
@@ -336,6 +358,10 @@ svg {
     text-align: end;
 }
 
+.contact-us-section {
+    padding-bottom: 30px;
+}
+
 .contact-us-form-container {
     justify-content: center;
     align-self: center;
@@ -348,24 +374,6 @@ svg {
 
 .contact-us-section p {
     text-align: center;
-}
-
-.contact-us-container {
-    padding-top: 40px;
-    justify-content: space-evenly;
-}
-
-.contact-us-div {
-    align-items: center;
-    justify-content: center;
-}
-
-.contact-us-div ion-icon {
-    font-size: 2.3rem;
-}
-
-.contact-us-div p {
-    font-family: 'Roboto';
 }
 
 .contact-us-form-container input {
@@ -385,8 +393,143 @@ textarea {
     background: white;
 }
 
+.submit-btn {
+    border-radius: 200px;
+    margin: 0px 0px 0px 80px;
+}
+
+.contact-us-container {
+    padding-top: 40px;
+    justify-content: space-evenly;
+}
+
+.contact-us-div {
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-us-div ion-icon {
+    font-size: 2.3rem;
+}
+
+.contact-us-div ion-icon,
+.contact-us-div p {
+    color: rgb(142, 21, 0);
+}
+
+.contact-us-div p {
+    font-family: 'Roboto';
+}
+
 footer {
+    padding-top: 20px;
+    color: white;
+    align-items: center;
+    justify-content: center;
     height: 10rem;
     width: 100%;
     background: linear-gradient(to left, rgb(142, 21, 0), rgb(160, 24, 6));
+}
+
+footer p {
+    margin-top: 10px;
+}
+
+footer h3 {
+    margin-top: -30px;
+}
+
+.social-medial-icons-container {
+    margin-top: 6px;
+    gap: 50px;
+}
+
+.social-medial-icons-container a {
+    color: white;
+}
+
+footer ion-icon {
+    font-size: 1.7rem;
+}
+
+
+/*----------------------*/
+
+
+/* JS STYLE CODE */
+
+
+/*----------------------*/
+
+.close-log-in-box-icon,
+.log-in-heading {
+    color: rgb(255, 58, 40);
+}
+
+.log-in-heading,
+.create-account-heading {
+    text-align: center;
+}
+
+.log-in-box-container {
+    align-items: center;
+    justify-content: center;
+}
+
+.log-in-box-div {
+    box-shadow: .2px .2px 22px .2px lightgray;
+    z-index: 1;
+    width: 22rem;
+    height: 23rem;
+    background: white;
+    padding: 20px 22px 12px 22px;
+    gap: 20px;
+}
+
+.close-log-in-box-icon {
+    font-size: 1.5rem;
+    margin-left: 300px;
+    color: red;
+}
+
+.log-in-heading {
+    margin-top: -45px;
+    color: rgb(255, 58, 40);
+}
+
+.log-in-input {
+    margin-top: -10px;
+    outline: none;
+    border: none;
+    box-shadow: .2px .2px 12px .2px lightgray;
+    padding: 8px 12px 8px 12px;
+}
+
+.box-log-in-button,
+.create-your-account {
+    padding: 8px 12px 8px 12px;
+    color: white;
+    box-shadow: .2px .2px 12px .2px rgb(241, 58, 58);
+}
+
+.box-log-in-button {
+    background: rgb(255, 58, 40);
+}
+
+.create-account-heading {
+    margin-top: 5px;
+    color: black
+}
+
+.create-your-account {
+    margin-top: -7px;
+    background: rgb(137, 11, 0);
+}
+
+.show-log-in-error {
+    width: 105.5%;
+    padding: 8px 12px 18px 13px;
+    margin: -3px 0px 0px -22px;
+    background: white;
+    color: red;
 }
