@@ -23,43 +23,17 @@
         gap: 20px;
         flex-direction: column;
     }
-    .top-bar-container {
-        background: rgb(83, 8, 1);
-    }
     .top-bar-container-logo-div {
-        padding-right: 50px;
         justify-content: space-between;
     }
     .top-bar-container-logo-div h3 {
-        color: white;
-        border: 8px double white;
+        color: rgb(255, 81, 0);
+        border: 8px double rgb(255, 81, 0);
         margin-top: 10px;
         border-radius: 20px;
-        padding: 4px 15px 4px 15px;
+        padding: 2px 15px 2px 15px;
         white-space: nowrap;
         font-size: 1rem;
-    }
-    .nav-bar-icon-div {
-        justify-content: center;
-        align-items: center;
-    }
-    .nav-bar-icon {
-        margin: 10px 0px 0px 67px;
-        font-size: 1.5rem;
-        visibility: visible;
-        background: white;
-        box-shadow: .2px .2px 3px .2px white;
-        padding: 6px 8px 6px 8px;
-        border-radius: 8px;
-    }
-    .nav-bar-icon:hover {
-        box-shadow: .2px .2px 6px .2px lightgray;
-        background: transparent;
-        transition: .2s;
-        color: rgb(255, 81, 0);
-    }
-    ul {
-        visibility: hidden;
     }
     header {
         margin-top: -90px;
@@ -93,6 +67,29 @@
     textarea {
         margin-left: 43px;
         width: 70%;
+    }
+    .nav-bar-icon-div {
+        justify-content: center;
+        align-items: center;
+    }
+    .nav-bar-icon {
+        margin: 10px 0px 0px 90px;
+        font-size: 1.8rem;
+        visibility: visible;
+        background: rgb(255, 81, 0);
+        box-shadow: .2px .2px 2px .2px rgb(255, 81, 0);
+        color: white;
+        padding: 6px 8px 6px 8px;
+        border-radius: 8px;
+    }
+    .nav-bar-icon:hover {
+        box-shadow: .2px .2px 6px .2px lightgray;
+        background: transparent;
+        transition: .2s;
+        color: rgb(255, 81, 0);
+    }
+    ul {
+        visibility: hidden;
     }
     h3 {
         text-align: center;

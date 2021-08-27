@@ -18,8 +18,6 @@ function showLogInBox() {
 
     logInBoxContainer.appendChild(logInBoxDiv);
 
-    header.style.marginTop = '-400px';
-
     header.style.opacity = '.1';
 
     logInBoxContainer.style.opacity = '1';
@@ -107,6 +105,78 @@ function showLogInBox() {
         header.style.opacity = '1';
 
         logInBtn.style.pointerEvents = 'auto';
+
+    }
+
+}
+
+
+const customerServiceButton = document.querySelector(".customer-service-button");
+
+
+customerServiceButton.addEventListener("click", showCustomerServiceBox, true);
+
+function showCustomerServiceBox() {
+
+    customerServiceButton.style.pointerEvents = 'none';
+
+    const customerServiceBox = document.createElement("div");
+    customerServiceBox.classList.add("customer-service-box");
+
+    const deleteCustomerServiceBoxIcon = document.createElement("button");
+    deleteCustomerServiceBoxIcon.innerHTML = '<ion-icon name="close-circle"></ion-icon>';
+    deleteCustomerServiceBoxIcon.classList.add("delete-customer-service-box-icon");
+
+    const customerServiceHeading = document.createElement("h3");
+    customerServiceHeading.innerHTML = 'Chat With Our Employee';
+
+    const customerServiceInput = document.createElement("input");
+    customerServiceInput.classList.add("customer-service-input");
+    customerServiceInput.placeholder = 'Chat with us';
+
+
+    document.body.appendChild(customerServiceBox);
+
+    customerServiceBox.appendChild(deleteCustomerServiceBoxIcon);
+
+    customerServiceBox.appendChild(customerServiceHeading);
+
+    customerServiceBox.appendChild(customerServiceInput);
+
+
+    const customerServiceBigIcon = document.createElement('icon');
+    customerServiceBigIcon.classList.add("customer-service-big-icon");
+    customerServiceBigIcon.innerHTML = '<ion-icon name="person-outline"></ion-icon>';
+
+    const customerServiceBoxText = document.createElement("p");
+    customerServiceBoxText.classList.add("customer-service-box-text");
+    customerServiceBoxText.innerText = 'We are always ready for your help';
+
+    const showMessage = document.createElement("p");
+    showMessage.classList.add('show-message');
+
+    const sendMessageButton = document.createElement("button");
+    showMessage.classList.add('show-message-button');
+    sendMessageButton.innerHTML = '<ion-icon name="send-outline"></ion-icon>';
+
+
+    customerServiceBox.appendChild(showMessage);
+
+    showMessage.appendChild(sendMessageButton);
+
+    customerServiceBox.appendChild(customerServiceBigIcon);
+
+    customerServiceBox.appendChild(customerServiceBoxText);
+
+    deleteCustomerServiceBoxIcon.addEventListener("click", deleteCustomerServiceBox, true);
+
+    function deleteCustomerServiceBox() {
+
+        const customerServiceButton = document.querySelector(".customer-service-button");
+
+        document.body.removeChild(customerServiceBox);
+
+        customerServiceButton.style.pointerEvents = 'auto';
 
     }
 
